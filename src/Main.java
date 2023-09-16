@@ -13,6 +13,8 @@ public class Main {
         if(option.equalsIgnoreCase("I")){
             System.out.print("Enter name: ");
             String name = scan.nextLine();
+            System.out.println("Enter Gender: ");
+            String gender = scan.nextLine();
             System.out.print("Enter height: ");
             float height = scan.nextFloat();
             System.out.print("Enter weight: ");
@@ -23,6 +25,7 @@ public class Main {
 
             identicalTwin identicalTwin1 = new identicalTwin();
             identicalTwin1.setName(name);
+            identicalTwin1.setGender(gender);
             identicalTwin1.setHeight(height);
             identicalTwin1.setWeight(weight);
             identicalTwin1.setHair_color(hair_color);
@@ -38,6 +41,7 @@ public class Main {
 
             identicalTwin identicalTwin2 = (identicalTwin) identicalTwin1.clone();
             identicalTwin2.setName(t_name);
+            identicalTwin2.setGender(identicalTwin1.getGender());
             identicalTwin2.setWeight(t_weight);
             identicalTwin2.setHeight(identicalTwin1.getHeight());
             identicalTwin2.setHair_color(identicalTwin1.getHair_color());
@@ -54,6 +58,8 @@ public class Main {
         } else {
             System.out.print("Enter name: ");
             String name = scan.nextLine();
+            System.out.println("Enter Gender: ");
+            String gender = scan.nextLine();
             System.out.print("Enter height: ");
             float height = scan.nextFloat();
             System.out.print("Enter weight: ");
@@ -64,6 +70,7 @@ public class Main {
 
             fraternalTwin f_twin1 = new fraternalTwin();
             f_twin1.setName(name);
+            f_twin1.setGender(gender);
             f_twin1.setHeight(height);
             f_twin1.setWeight(weight);
             f_twin1.setHair_color(hair_color);
@@ -74,6 +81,8 @@ public class Main {
             System.out.println("Twin's information");
             System.out.print("Enter name: ");
             String f_name = scan.nextLine();
+            System.out.println("Enter Gender: ");
+            String f_gender = scan.nextLine();
             System.out.print("Enter height: ");
             float f_height = scan.nextFloat();
             System.out.print("Enter weight: ");
@@ -84,6 +93,7 @@ public class Main {
 
             fraternalTwin f_twin2 = (fraternalTwin) f_twin1.clone();
             f_twin2.setName(f_name);
+            f_twin2.setGender(f_gender);
             f_twin2.setWeight(f_weight);
             f_twin2.setHeight(f_height);
             f_twin2.setHair_color(f_hair_color);

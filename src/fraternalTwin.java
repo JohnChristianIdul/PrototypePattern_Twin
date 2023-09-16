@@ -1,19 +1,21 @@
 public class fraternalTwin extends Person {
     private String name;
     private float height;
+    private String gender;
     private String hair_color;
     private float weight;
 
-    public fraternalTwin(String name, float height, String hair_color, float weight, String name1, float height1, String hair_color1, float weight1) {
-        super(name, height, hair_color, weight);
+    public fraternalTwin(String name, float height, String gender, String hair_color, float weight, String name1, float height1, String hair_color1, float weight1) {
+        super(name, height, gender, hair_color, weight);
         this.name = name1;
         this.height = height1;
+        this.gender = gender;
         this.hair_color = hair_color1;
         this.weight = weight1;
     }
 
-    public fraternalTwin(String name, float height, String hair_color, float weight) {
-        super(name, height, hair_color, weight);
+    public fraternalTwin(String name, float height, String gender, String hair_color, float weight) {
+        super(name, height, gender, hair_color, weight);
     }
 
     public fraternalTwin() {
@@ -26,6 +28,14 @@ public class fraternalTwin extends Person {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public float getHeight() {
