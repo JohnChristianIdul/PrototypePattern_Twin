@@ -6,7 +6,7 @@ public class identicalTwin extends Person {
     private float weight;
 
     public identicalTwin(String name, float height, String gender, String hair_color, float weight, String name1, float height1, String hair_color1, float weight1) {
-        super(name, height, gender, hair_color, weight);
+        super(name, gender, height, weight, hair_color);
         this.name = name1;
         this.height = height1;
         this.gender = gender;
@@ -15,11 +15,10 @@ public class identicalTwin extends Person {
     }
 
     public identicalTwin(String name, float height, String gender, String hair_color, float weight) {
-        super(name, height, gender, hair_color, weight);
+        super(name, gender, height, weight, hair_color);
     }
 
     public identicalTwin() {
-        super();
     }
 
     public String getName() {
@@ -66,7 +65,7 @@ public class identicalTwin extends Person {
         System.out.println("Name: " + getName());
         System.out.println("Height: " + getHeight());
         System.out.println("Weight: " + getWeight());
-        System.out.println("Hair Color: " + getWeight());
+        System.out.println("Hair Color: " + getHair_color());
     }
 
     @Override

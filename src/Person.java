@@ -6,16 +6,16 @@ public abstract class Person implements Cloneable{
     protected float weight;
 
     public Person(){
-
     }
 
-    public Person(String name, float height, String gender, String hair_color, float weight) {
+    public Person(String name, String gender, float height, float weight, String hair_color) {
         this.name = name;
         this.height = height;
         this.gender = gender;
         this.hair_color = hair_color;
         this.weight = weight;
     }
+
 
     public void print(){}
     public abstract Person clone();
