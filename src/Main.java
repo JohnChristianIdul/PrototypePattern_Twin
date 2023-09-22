@@ -24,6 +24,7 @@ public abstract class Main{
             float height = scan.nextFloat();
             System.out.print("Enter weight: ");
             float weight = scan.nextFloat();
+            scan.nextLine();
 
 
             identicalTwin1.setName(name);
@@ -40,7 +41,6 @@ public abstract class Main{
             System.out.println("Twin's Information!");
             System.out.print("Enter name: ");
             String t_name = scan.nextLine();
-            scan.nextLine();
             System.out.print("Enter height: ");
             float t_height = scan.nextFloat();
             System.out.print("Enter weight: ");
@@ -117,6 +117,5 @@ public abstract class Main{
             System.out.println("Twin 2 Details:");
             f_twin2.print();
         }
-
     }
 }

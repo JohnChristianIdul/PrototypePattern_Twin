@@ -5,13 +5,12 @@ public class fraternalTwin extends Person {
     private String hair_color;
     private float weight;
 
-    public fraternalTwin(String name, float height, String gender, String hair_color, float weight, String name1, float height1, String hair_color1, float weight1) {
-        super(name, gender, height, weight, hair_color);
-        this.name = name1;
-        this.height = height1;
+    public fraternalTwin(String name, float height, String gender, String hair_color, float weight) {
+        this.name = name;
+        this.height = height;
         this.gender = gender;
-        this.hair_color = hair_color1;
-        this.weight = weight1;
+        this.hair_color = hair_color;
+        this.weight = weight;
     }
 
     public fraternalTwin() {
