@@ -50,7 +50,6 @@ public abstract class Main{
             identicalTwin2.setGender(identicalTwin1.getGender());
             identicalTwin2.setHeight(t_height);
             identicalTwin2.setWeight(t_weight);
-            identicalTwin2.setHeight(identicalTwin1.getHeight());
             identicalTwin2.setHair_color(identicalTwin1.getHair_color());
 
             twins.add(identicalTwin2);
