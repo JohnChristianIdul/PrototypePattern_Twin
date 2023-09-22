@@ -70,11 +70,11 @@ public abstract class Main{
             String gender = scan.nextLine();
             System.out.print("Enter hair color: ");
             String hair_color = scan.nextLine();
-            scan.nextLine();
             System.out.print("Enter height: ");
             float height = scan.nextFloat();
             System.out.print("Enter weight: ");
             float weight = scan.nextFloat();
+            scan.nextLine();
 
             f_twin1.setName(name);
             f_twin1.setGender(gender);
@@ -94,7 +94,6 @@ public abstract class Main{
             String f_gender = scan.nextLine();
             System.out.print("Enter hair color: ");
             String f_hair_color = scan.nextLine();
-            scan.nextLine();
             System.out.print("Enter height: ");
             float f_height = scan.nextFloat();
             System.out.print("Enter weight: ");
