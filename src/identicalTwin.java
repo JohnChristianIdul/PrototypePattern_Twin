@@ -1,20 +1,10 @@
 public class identicalTwin extends Person {
-    private String name;
-    private float height;
-    private String gender;
-    private String hair_color;
-    private float weight;
-
-    public identicalTwin(String name, float height, String gender, String hair_color, float weight) {
-        super();
-        this.name = name;
-        this.height = height;
-        this.gender = gender;
-        this.hair_color = hair_color;
-        this.weight = weight;
-    }
 
     public identicalTwin() {
+    }
+
+    public identicalTwin(String name, String gender, float height, float weight, String hair_color) {
+        super(name, gender, height, weight, hair_color);
     }
 
     public String getName() {
