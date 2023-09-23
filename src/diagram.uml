@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="210.0" y="-44.0">Person</node>
+    <node x="-80.5" y="-44.0">Application</node>
+    <node x="95.5" y="81.0">identicalTwin</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="identicalTwin" target="Person" relationship="GENERALIZATION">
+      <point x="73.5" y="-17.0" />
+      <point x="-17.5" y="17.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="1.0" showDependencies="false" x="278.0" y="32.0" />
+  <SelectedNodes>
+    <node>identicalTwin</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
