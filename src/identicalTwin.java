@@ -56,6 +56,6 @@ public class identicalTwin extends Person {
 
     @Override
     public Person clone() {
-        return new identicalTwin();
+        return new identicalTwin(getName(),getGender(),getHeight(),getWeight(),getHair_color());
     }
 }

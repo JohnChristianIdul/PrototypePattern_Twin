@@ -56,6 +56,6 @@ public class fraternalTwin extends Person {
 
     @Override
     public Person clone() {
-        return new fraternalTwin();
+        return new fraternalTwin(getName(),getGender(),getHeight(), getWeight(), getHair_color());
     }
 }
