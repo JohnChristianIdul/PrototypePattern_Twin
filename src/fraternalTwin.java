@@ -48,14 +48,11 @@ public class fraternalTwin extends Person {
     }
 
     public void print() {
-        System.out.println("Name: " + getName());
-        System.out.println("Height: " + getHeight());
-        System.out.println("Weight: " + getWeight());
-        System.out.println("Hair Color: " + getHair_color());
+        super.print();
     }
 
     @Override
-    public Person clone() {
+    public fraternalTwin clone() {
         return new fraternalTwin(getName(),getGender(),getHeight(), getWeight(), getHair_color());
     }
 }

@@ -48,14 +48,11 @@ public class identicalTwin extends Person {
     }
 
     public void print() {
-        System.out.println("Name: " + getName());
-        System.out.println("Height: " + getHeight());
-        System.out.println("Weight: " + getWeight());
-        System.out.println("Hair Color: " + getHair_color());
+        super.print();
     }
 
     @Override
-    public Person clone() {
+    public identicalTwin clone() {
         return new identicalTwin(getName(),getGender(),getHeight(),getWeight(),getHair_color());
     }
 }

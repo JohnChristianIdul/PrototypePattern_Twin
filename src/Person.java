@@ -17,6 +17,12 @@ public abstract class Person implements Cloneable{
     }
 
 
-    public void print(){}
+    public void print(){
+        System.out.println("Name: " + name);
+        System.out.println("Gender: " + gender);
+        System.out.println("Height: " + height);
+        System.out.println("Weight: " + weight);
+        System.out.println("Hair Color: " + hair_color);
+    }
     public abstract Person clone();
 }

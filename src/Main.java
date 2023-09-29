@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+// (egg) E (egg)
 class Application{
     private ArrayList<Person> twins = new ArrayList<>();
 
@@ -11,8 +12,7 @@ class Application{
         System.out.println("Clone yourself and have a twin!");
         System.out.print("Select 'I' for IdenticalTwin or 'F' for FraternalTwin: ");
         String option = scan.nextLine();
-        if(option.equalsIgnoreCase("I")){
-            identicalTwin identicalTwin1 = new identicalTwin();
+        if (option.equalsIgnoreCase("I")) {
 
             System.out.print("Enter name: ");
             String name = scan.nextLine();
@@ -26,15 +26,11 @@ class Application{
             float weight = scan.nextFloat();
             scan.nextLine();
 
-            identicalTwin1.setName(name);
-            identicalTwin1.setGender(gender);
-            identicalTwin1.setHeight(height);
-            identicalTwin1.setWeight(weight);
-            identicalTwin1.setHair_color(hair_color);
+            identicalTwin identicalTwin1 = new identicalTwin(name,gender,height,weight,hair_color);
 
             twins.add(identicalTwin1);
 
-            identicalTwin identicalTwin2 = (identicalTwin) identicalTwin1.clone();
+            identicalTwin identicalTwin2 = identicalTwin1.clone();
 
             System.out.println();
             System.out.println("Twin's Information!");
@@ -47,16 +43,12 @@ class Application{
             System.out.println();
 
             identicalTwin2.setName(t_name);
-            identicalTwin2.setGender(identicalTwin1.getGender());
             identicalTwin2.setHeight(t_height);
             identicalTwin2.setWeight(t_weight);
-            identicalTwin2.setHair_color(identicalTwin1.getHair_color());
 
             twins.add(identicalTwin2);
 
         } else {
-
-            fraternalTwin f_twin1 = new fraternalTwin();
 
             System.out.print("Enter name: ");
             String name = scan.nextLine();
@@ -70,15 +62,9 @@ class Application{
             float weight = scan.nextFloat();
             scan.nextLine();
 
-            f_twin1.setName(name);
-            f_twin1.setGender(gender);
-            f_twin1.setHeight(height);
-            f_twin1.setWeight(weight);
-            f_twin1.setHair_color(hair_color);
+            fraternalTwin f_twin1 = new fraternalTwin(name,gender, height, weight, hair_color);
 
             twins.add(f_twin1);
-
-            fraternalTwin f_twin2 = (fraternalTwin) f_twin1.clone();
 
             System.out.println();
             System.out.println("Twin's information");
@@ -93,6 +79,8 @@ class Application{
             System.out.print("Enter weight: ");
             float f_weight = scan.nextFloat();
             System.out.println();
+
+            fraternalTwin f_twin2 = f_twin1.clone();
 
             f_twin2.setName(f_name);
             f_twin2.setGender(f_gender);
@@ -111,7 +99,7 @@ class Application{
             personCopy.add(p.clone());
         }
 
-        System.out.println("CLONED!!");
+        System.out.println("SUCCESSFULLY CLONED A TWIN!!");
         for (Person p : personCopy) {
             if(p instanceof identicalTwin){
                 System.out.println("Identical Twins");
@@ -124,7 +112,6 @@ class Application{
                 System.out.println();
             }
         }
-
     }
 
     public static void main(String[] args) {

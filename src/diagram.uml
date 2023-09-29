@@ -3,22 +3,32 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="210.0" y="-44.0">Person</node>
-    <node x="-80.5" y="-44.0">Application</node>
-    <node x="95.5" y="81.0">identicalTwin</node>
+    <node x="627.7794117647059" y="268.37394957983196">identicalTwin</node>
+    <node x="48.06722689075639" y="-44.0">Application</node>
+    <node x="354.5" y="-44.0">Person</node>
+    <node x="-13.693277310924373" y="278.1165966386555">fraternalTwin</node>
   </nodes>
   <notes />
   <edges>
     <edge source="identicalTwin" target="Person" relationship="GENERALIZATION">
-      <point x="73.5" y="-17.0" />
-      <point x="-17.5" y="17.0" />
+      <point x="-4.117647058592411E-4" y="-187.99962184873954" />
+      <point x="801.279" y="167.0" />
+      <point x="509.0" y="167.0" />
+      <point x="0.0" y="68.0" />
+    </edge>
+    <edge source="fraternalTwin" target="Person" relationship="GENERALIZATION">
+      <point x="2.7731092436056315E-4" y="-187.99959663865548" />
+      <point x="159.807" y="167.0" />
+      <point x="509.0" y="167.0" />
+      <point x="0.0" y="68.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Compact" zoom="1.0" showDependencies="false" x="278.0" y="32.0" />
-  <SelectedNodes>
-    <node>identicalTwin</node>
-  </SelectedNodes>
-  <Categories />
+  <settings layout="Hierarchic Compact" zoom="0.8981132075471698" showDependencies="false" x="178.2268907563025" y="187.2268907563025" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
 </Diagram>
